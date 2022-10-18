@@ -1,0 +1,42 @@
+@import "../../mixins";
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8em 0;
+    @include icon-button;
+
+    .icon {
+      font-size: 2em;
+    }
+
+    .text {
+      margin-left: .4em;
+      font-size: .9em;
+    }
+
+    &.expand {
+      .text {
+        margin-left: .1em;
+      }
+    }
+
+    &.locate {
+      .icon {
+        font-size: .844em;
+      }
+    }
+
+    &.search {
+      .icon {
+        font-size: 1.28em;
+      }
+    }
+  }
+}

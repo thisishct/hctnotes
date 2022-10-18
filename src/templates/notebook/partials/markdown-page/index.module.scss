@@ -1,0 +1,80 @@
+@import "~@/styles/boot";
+@import "variables";
+@import "../../variables";
+
+.markdownPage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+
+  .wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: calc(100vh - #{$header-height} - #{$bottom-action-section});
+    padding: $page-side-gap;
+
+    .markdownWrapper {
+      flex: 1;
+      min-width: 0;
+      box-sizing: border-box;
+    }
+
+    .toc {
+      margin-left: $page-side-gap;
+    }
+  }
+}
+
+.bottomActionSection {
+  box-sizing: border-box;
+  height: $bottom-action-section;
+  display: flex;
+  align-items: center;
+  padding: $page-side-gap;
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+
+    .section {
+      display: flex;
+      align-items: center;
+      margin: 0 -10px;
+
+      .item {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .editThisPage {
+    color: rgb(55, 57, 64);
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(236, 236, 236);
+    background: transparent;
+    transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
+
+    &:hover {
+      background: transparent;
+      color: rgb(26, 26, 26);
+      border-color: rgb(26, 26, 26);
+    }
+  }
+}
+
+
+.footer {
+  text-align: center;
+  line-height: 88px;
+  color: #111;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  font-size: 1em;
+}

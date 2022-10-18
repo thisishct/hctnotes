@@ -1,0 +1,121 @@
+{
+  "id": "1763041",
+  "name": "notebook_website",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11488112",
+      "name": "return",
+      "font_class": "return",
+      "unicode": "e75f",
+      "unicode_decimal": 59231
+    },
+    {
+      "icon_id": "11488033",
+      "name": "editor",
+      "font_class": "editor",
+      "unicode": "e74d",
+      "unicode_decimal": 59213
+    },
+    {
+      "icon_id": "11488105",
+      "name": "reeor",
+      "font_class": "reeor",
+      "unicode": "e75e",
+      "unicode_decimal": 59230
+    },
+    {
+      "icon_id": "11488302",
+      "name": "reeor-fill",
+      "font_class": "reeor-fill",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
+      "icon_id": "11474331",
+      "name": "rising",
+      "font_class": "rising",
+      "unicode": "e703",
+      "unicode_decimal": 59139
+    },
+    {
+      "icon_id": "11488039",
+      "name": "falling",
+      "font_class": "falling",
+      "unicode": "e750",
+      "unicode_decimal": 59216
+    },
+    {
+      "icon_id": "11488063",
+      "name": "left arrow",
+      "font_class": "leftarrow",
+      "unicode": "e755",
+      "unicode_decimal": 59221
+    },
+    {
+      "icon_id": "11488115",
+      "name": "Right arrow",
+      "font_class": "Rightarrow",
+      "unicode": "e761",
+      "unicode_decimal": 59233
+    },
+    {
+      "icon_id": "11488149",
+      "name": "top",
+      "font_class": "Top",
+      "unicode": "e769",
+      "unicode_decimal": 59241
+    },
+    {
+      "icon_id": "12011697",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e7b3",
+      "unicode_decimal": 59315
+    },
+    {
+      "icon_id": "11487977",
+      "name": "arrow-right",
+      "font_class": "arrow-right",
+      "unicode": "e744",
+      "unicode_decimal": 59204
+    },
+    {
+      "icon_id": "11487978",
+      "name": "arrow-lift",
+      "font_class": "arrow-lift",
+      "unicode": "e745",
+      "unicode_decimal": 59205
+    },
+    {
+      "icon_id": "8320533",
+      "name": "aim",
+      "font_class": "aim",
+      "unicode": "e8c3",
+      "unicode_decimal": 59587
+    },
+    {
+      "icon_id": "11488000",
+      "name": "category",
+      "font_class": "category",
+      "unicode": "e747",
+      "unicode_decimal": 59207
+    },
+    {
+      "icon_id": "11487982",
+      "name": "arrow-up",
+      "font_class": "arrow-up",
+      "unicode": "e743",
+      "unicode_decimal": 59203
+    },
+    {
+      "icon_id": "12011691",
+      "name": "arrow-down",
+      "font_class": "arrow-down",
+      "unicode": "e7b2",
+      "unicode_decimal": 59314
+    }
+  ]
+}

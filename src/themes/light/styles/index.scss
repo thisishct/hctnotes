@@ -1,0 +1,237 @@
+@import "variables";
+@import "~@/templates/notebook/_variables.scss";
+
+.theme-light {
+  font-size: 14px;
+  line-height: 1.4;
+  color: $text-color-primary;
+
+  a {
+    color: $text-color-primary;
+  }
+
+  // ================== sidebar ==================
+  .sidebar {
+    background: $background-lv1;
+
+    a:hover {
+      color: $theme-color;
+    }
+
+    .theme-tree {
+      .theme-tree-node {
+        border-radius: $border-radius * 2;
+      }
+
+      .theme-tree-label {
+        border-radius: $border-radius * 2;
+
+        &:hover {
+          background: $background-lv2;
+        }
+      }
+
+      .active {
+        color: $theme-color;
+        background: $background-lv2;
+
+        a {
+          color: $theme-color;
+        }
+      }
+
+      .theme-tree-label-arrow {
+        font-size: 1.2em !important;
+      }
+    }
+  }
+  // ================== /sidebar ==================
+
+  .markdown {
+    // ================== header ==================
+    @for $i from 1 through 6 {
+      h#{$i} {
+        margin: $gap 0 0 0;
+        padding: 0;
+        line-height: 1.4;
+        font-size: #{1.5 - $i * 0.08}em;
+        position: static !important;
+
+        &::before {
+          content: "";
+          display: block;
+          padding-top: calc(#{$header-height} + #{$gap});
+          margin-top: calc(-#{$header-height} - #{$gap} + 1px);
+        }
+      }
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    h2 {
+      &::before {
+        border-bottom: 1px solid #ececec;
+        padding-top: $header-height;
+        margin-top: -$header-height;
+        margin-bottom: $gap;
+      }
+    }
+
+    // ================== /header ==================
+
+    // ================== paragraph ==================
+    p {
+      line-height: 1.7;
+      margin-top: $gap;
+    }
+
+    p + p {
+      margin-top: .4 * $gap;
+    }
+    // ================== /paragraph ==================
+
+    // ================== list ==================
+    ul, ol {
+      margin-top: $gap;
+
+      ul, ol {
+        margin-top: .3em;
+      }
+
+      li {
+        margin-top: .3em;
+        line-height: $line-height;
+
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+    // ================== /list ==================
+
+    // ================== blockquote ==================
+    blockquote {
+      margin: $gap 0 0;
+      padding: 1em;
+      background-color: $background-lv1;
+      border-left: 4px solid $theme-color;
+
+      p {
+        margin-top: 0;
+      }
+    }
+    // ================== /blockquote ==================
+
+    // ================== code ==================
+    div[data-language] {
+      margin: $gap 0;
+
+      pre {
+        $line-height: 1.8em;
+        font-size: .86em;
+
+        padding: 1em;
+        line-height: $line-height;
+        border-radius: $border-radius;
+        background: $background-lv6;
+
+        code {
+          line-height: $line-height;
+        }
+      }
+
+      .line-numbers-rows {
+        font-size: .9em;
+      }
+    }
+
+    h1 > code, h2 > code, h3 > code, h4 > code, h5 > code, h6 > code,
+    p > code,
+    li > code {
+      display: inline;
+      padding: 0 3px;
+      font-size: 1em;
+      line-height: 1.2;
+      color: $text-color-primary;
+      background: $background-lv2;
+      word-break: break-word;
+      font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+      border-radius: $border-radius;
+    }
+    // ================== /code ==================
+
+    // ================== table ==================
+    table {
+      width: 100%;
+      margin: $gap 0;
+      background: $background-lv1;
+      border: none;
+      border-radius: $border-radius;
+      overflow: hidden;
+      table-layout: fixed;
+      word-wrap:break-word;
+      line-height: 1.6em;
+
+      tr {
+        border-bottom: 1px solid #fff;
+      }
+
+      th, td {
+        margin: 2em;
+        padding: 1em 1.8em;
+        border-right: 1px solid #fff;
+      }
+
+      thead {
+        tr {
+          background: $background-lv2;
+        }
+      }
+    }
+    // ================== /table ==================
+
+    // ================== link ==================
+    a:not([aria-label]) {
+      target-name: new;
+      target-new: tab;
+      color: $text-color-primary;
+      padding: 0 4px;
+      background: #eef0fc;
+      border-bottom: 1px solid $theme-color;
+      border-radius: $border-radius $border-radius 0 0;
+
+      &:hover {
+        background: #e2eefe;
+      }
+    }
+    // ================== /link ==================
+
+
+    // ================== video ==================
+    .mdx-video {
+      margin-top: $gap;
+    }
+    // ================== /video ==================
+
+    .inline-highlight {
+      background: yellow;
+    }
+  }
+
+  .table-of-contents {
+    a:hover {
+      color: $theme-color;
+      text-decoration: underline;
+    }
+
+    .active > div a {
+      transition: color .1s;
+      color: $theme-color;
+      text-decoration: underline;
+    }
+  }
+}

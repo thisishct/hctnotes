@@ -1,0 +1,34 @@
+// scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+
+  &:hover {
+    background: #aaa;
+  }
+}
+
+body {
+  text-rendering: optimizelegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  .autolink-header-icon {
+    margin-left: .2em;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+
+  &:hover .autolink-header-icon {
+    opacity: .6;
+  }
+}
